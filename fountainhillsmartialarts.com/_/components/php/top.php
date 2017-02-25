@@ -13,8 +13,9 @@
 					<img src="images/classes.png">
 				</div>
 				<div class="topSubtitle">
-					Train the heart and all else follows
+					Countdown to Warrior Camp
 				</div>
+				<div id="warriorCampCountdown" class="countdown"></div>
 			</div>
 			
 			<div id="top-carousel" class="carousel headCarousel">

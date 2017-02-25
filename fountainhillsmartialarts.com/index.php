@@ -26,6 +26,7 @@
 				<div class="logo"></div>
 			</div>
 		<?php include '_/components/php/about.php'; ?>
+		<?php include '_/components/php/nextEvent.php'; ?>
 		<?php include '_/components/php/classes.php'; ?>
 		</div><!-- content container -->
 		<div class="overlay"></div>
@@ -66,6 +67,7 @@
 		<script src="_/components/js/scrollspy.js"></script>
     	<script src="_/components/bwsewell-tablecloth/assets/js/jquery.tablecloth.js"></script>
     	<script src="_/components/colorbox-master/jquery.colorbox-min.js"></script>
+    	<script src="_/components/jquery.countdown-2.2.0/jquery.countdown.min.js"></script>
 		<script src="_/js/myscript.js"></script>
 
 		<script type="text/javascript">
@@ -99,6 +101,13 @@
 				        $('#message').attr('cols','50');
 				      }
 				  });
+
+				  $("#warriorCampCountdown")
+					  .countdown("2017/07/20 12:00:00", function(event) {
+					    $(this).text(
+					      event.strftime('%m months %n days %H:%M:%S')
+					    );
+					  });
 			});
 		</script>
 
