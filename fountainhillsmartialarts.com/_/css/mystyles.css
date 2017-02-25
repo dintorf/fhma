@@ -1,0 +1,511 @@
+@font-face{
+	font-family: 'Franchise';
+  	/*font-weight: 400;*/
+  	src: url(../fonts/Franchise-Bold-hinted.ttf) format('truetype');	
+}
+@font-face{
+	font-family: 'BankGothic';
+  	/*font-weight: 400;*/
+  	src: url(../fonts/BankGothic.ttf) format('truetype');	
+}
+html{
+	background:transparent!important;
+}
+
+body.otherPages{
+	background-color: #222;
+}
+
+a:focus{
+	outline: none;
+}
+
+.centerDiv{
+	margin-top: 25%;
+	border-radius: 10px;
+}
+
+#calendarPage{
+	background:#ffffff;
+}
+.calContent{
+	margin-top: 60px;
+}
+.navLogo{
+	max-width: 50px;
+	max-height: 50px;
+	float: left;
+	margin-right: 5px;
+	-webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+}
+.navAlign{
+	vertical-align: middle;
+}
+.pull-right{
+	text-align: right;
+}
+.navFB{
+	float: left;
+	padding:13px 15px 9px 15px;
+	-webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+}
+#topNav a {
+	font-weight:bold;
+    display: block;
+    -webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navLogo :hover{
+	background-color:#B53333;
+	-webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+}
+#topNav a:hover {
+    color: #B53333;
+}
+#topNav #navFB :hover{
+	color: #ffffff;
+	background-color:#3B5998;
+	-webkit-transition: .3s all ease;
+    -moz-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+#topNav li.active a {
+    color: #B53333;
+    font-weight: bold;
+    background-color:transparent;
+}
+.navbar .open>.dropdown-menu {
+	background-color: #222;
+  	border-color: #080808;
+}
+.navbar .open>.dropdown-menu a:hover {
+	background:transparent;
+}
+.navbar .open>.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus {
+	background-color: transparent;
+}
+/*body{
+	background: #ffffff url('../../images/FHMALOGO_original.png') no-repeat fixed center 100px;
+}*/
+/*body { 
+  background: url('../../images/FHMALOGO_original.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+.well {
+   background-color: rgba(245, 245, 245, 0.4);
+}
+.fc-header-title h2{
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+@media (max-width: 991px){
+	.fc-header-title h2{
+		font-size: 12px;
+		margin-top: 6px;
+	}
+}
+@media (max-width: 765px){
+	.fc-header-title h2{
+		font-size: 18px;
+		margin-top: 5px;
+	}
+}
+.glyphicon{
+	word-spacing: -10px;
+}
+.logo{
+	/*width: 150px;
+	height: 150px;
+	top:-110px;
+	z-index: 500;
+	background-image: url(../../images/FHMALOGO_transparent.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size:150px 150px;
+	position:absolute;*/
+
+	position: absolute;
+    top: -75px;
+    left: 48%;
+    margin-left: -50px;
+    z-index: 500;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../images/FHMALOGO_transparent.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-indent: -9999px;
+    background-size: 150px 150px;
+}
+@media (max-width: 768px){
+	.logo{
+		position: absolute;
+	    top: -65px;
+	    left: 48%;
+	    margin-left: -50px;
+	    z-index: 500;
+	    width: 130px;
+	    height: 130px;
+	    background-image: url(../../images/FHMALOGO_transparent.png);
+	    background-repeat: no-repeat;
+	    background-position: top center;
+	    text-indent: -9999px;
+	    background-size: 130px 130px;
+	}
+}
+.logoContain{
+	padding-bottom:50px;
+}
+.topHeading{
+	text-align:center;
+}
+.topTitle{
+	/*position: absolute;*/
+	padding-top: 15%;
+	font-family: "BankGothic";
+	font-size: 45px;
+	color:#ffffff;
+	text-transform:uppercase;
+	/*text-align: center;*/
+}
+.topClassImg{
+	padding-top: 5%;
+}
+.topClassImg img{
+	width: 750px;
+	height: 172px;
+}
+.topSubtitle{
+	/*position: absolute;*/
+	padding-top: 5%;
+	font-family: "BankGothic";
+	font-size: 25px;
+	color:#ffffff;
+	text-transform:uppercase;
+	/*text-align: center;*/
+}
+@media (max-width: 1199px){
+	.topTitle{
+		font-size: 40px;
+		padding-top: 20%;
+	}
+	.topSubtitle{
+		/*padding-top: 5%;*/
+	}
+}
+@media (max-width: 991px){
+	.topTitle{
+		padding-top: 25%;
+	}
+	.topClassImg img{
+		width: 650px;
+		height: 149px;
+	}
+	.topSubtitle{
+		font-size: 20px;
+		/*padding-top: 5%;*/
+	}
+}
+@media (max-width: 768px){
+	.topTitle{
+		font-size: 25px;
+		padding-top: 30%;
+	}
+	.topClassImg img{
+		width: 300px;
+		height: 69px;
+
+	}
+	.topSubtitle{
+		font-size: 15px;
+	}
+}
+.header {
+/*position:relative;*/
+min-height:875px;
+padding-top:41px;
+}
+
+@media (max-width: 768px){
+	.header{
+		min-height:650px;
+	}
+}
+
+.pageContent{
+	padding: 41px 10px 41px 10px;
+	position:relative;
+	background-color:#B53333;
+	width:100%;
+	-webkit-box-shadow:0 -1px 15px 0 #000;
+	-moz-box-shadow:0 -1px 15px 0 #000;
+	box-shadow:0 -1px 15px 0 #000;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	color:#ffffff;
+	line-height: 2em;
+}
+.pageContent h2{
+	color:#ffcccc;
+}
+
+.pageContent2{
+	padding: 41px 10px 41px 10px;
+	position:relative;
+	background-color:#222;
+	width:100%;
+	-webkit-box-shadow:0 -1px 15px 0 #000;
+	-moz-box-shadow:0 -1px 15px 0 #000;
+	box-shadow:0 -1px 15px 0 #000;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	color:#ffffff;
+	line-height: 2em;
+}
+.pageContent2 h2{
+	color:#ffcccc;
+}
+
+.pageContentOther{
+	padding: 41px 10px 41px 10px;
+	position:relative;
+	background-color:#B53333;
+	width:100%;
+	height:100%;
+	-webkit-box-shadow:0 -1px 15px 0 #000;
+	-moz-box-shadow:0 -1px 15px 0 #000;
+	box-shadow:0 -1px 15px 0 #000;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	color:#ffffff;
+	line-height: 2em;
+}
+.pageContentOther h2{
+	color:#ffcccc;
+}
+
+.overlay{
+	background-color: rgba(0,0,0,0.5);
+	position:absolute;
+	left: 0;
+	/*top: 0;*/
+	width: 100%;
+	height: 100%;
+	min-height:1000px;
+}
+.carousel.headCarousel { z-index: -999; position:absolute;} /* keeps this behind all content */
+.carousel.headCarousel .item {
+	margin-top:5px;
+    position: fixed; 
+    width: 100%; height: 100%;
+    background-color: #000000;
+    max-height:950px;
+    /*opacity: 0.5;*/
+/*    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;*/
+
+}
+.carousel.headCarousel .one {
+background: url(/images/turnbackKick.jpg) center center;
+background-size: cover;
+-moz-background-size: cover;
+/*opacity: 0.4;*/
+}
+.carousel.headCarousel .two {
+background: url(../../images/doubleFlip.jpg) center center;
+background-size: cover;
+-moz-background-size: cover;
+/*opacity: 0.4;*/
+}
+.carousel.headCarousel .three {
+background: url(../../images/MSFlyingSide.jpg) center center;
+background-size: cover;
+-moz-background-size: cover;
+/*opacity: 0.4;*/
+}
+/*.carousel.vertical .item {
+  -webkit-transition: 2s ease;
+     -moz-transition: 2s ease;
+      -ms-transition: 2s ease;
+       -o-transition: 2s ease;
+          transition: 2s ease;
+}
+
+.carousel.vertical .active {
+  top: 0;
+}
+
+.carousel.vertical .next {
+  top: 100%;
+}
+
+.carousel.vertical .prev {
+  top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+  top: 0;
+}
+
+.carousel.vertical .active.left {
+  top: -100%;
+}
+
+.carousel.vertical .active.right {
+  top: 100%;
+}
+
+.carousel.vertical .item {
+    left: 0;
+}*/
+/*.carousel .active.left {
+    left:0;
+    opacity:0.4 !important;
+    z-index:-2;
+}*/
+
+.rightSection{
+	text-align: left;
+}
+.leftSection{
+	text-align: left;
+}
+.align-bot{
+	bottom: -12px;
+}
+@media (min-width: 768px) {
+	.leftSection{
+		/*border-right: 2px solid white;*/
+		padding-right:45px;
+	}
+	.rightSection{
+		padding-left:40px;
+	}
+	#classes{
+		padding-left:30px;
+	}
+}
+@media (max-width: 768px) {
+	.leftSection{
+		text-align: left;
+	}
+}
+.my_table{
+	border-color:#232323;
+}
+
+.fbOuter{
+	background-color:#222;
+    width: 555px;
+}
+#likeboxModal .modal-header{
+	width: 555px;
+	color: #fff;
+}
+@media (max-width: 768px) {
+	.fbOuter{
+	    width: 300px;
+	}
+	#likeboxModal .modal-header{
+		width: 300px;
+	}
+}
+
+#likeboxModal .close{
+	color: white;
+	opacity: 1.0;
+	filter:alpha(opacity=100);
+}
+#likeboxModal .close:hover{
+	opacity: .5;
+	filter:alpha(opacity=50);
+}
+.behindBG {
+	background-color: rgba(0,0,0,0.5);
+}
+@media (max-width: 768px) {
+	/*.newBG{
+		height: 400px;
+	}*/
+	.newBGText{
+		top:100px;
+	}
+}
+.newBG {
+	position: relative;
+	z-index: -1;
+	background: url(/images/MSFlyingSide.jpg) center center;
+	/*background-attachment: scroll;*/
+	height: 600px;
+	width: 100%;
+	background-size: cover;
+	-moz-background-size: cover;
+}
+
+.newBGText{
+	color:#fff;
+	position:relative;
+	top:200px;
+	font-weight:bold;
+}
+
+.thumbnail {
+	background-color: #222;
+	color: #fff;
+	border-radius: 10px;
+}
+.thumbnail .caption{
+	color: #fff;
+}
+
+#gallery img{
+	/*width:150px;*/
+	height:100px;
+}
+
+#gallery img:hover{
+	cursor:pointer;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+#gallery-carousel img{
+	width:100%;
+}
+.thumbList{
+	position:absolute;
+	bottom:0px;
+}
+.gallGroup{
+	background-color: #222;
+	padding: 10px 10px 10px 10px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+/*#galleryModal1 .modal-body{
+	min-width:1000px;
+}*/
