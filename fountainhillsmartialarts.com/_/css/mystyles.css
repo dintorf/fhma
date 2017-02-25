@@ -201,6 +201,12 @@ a:focus{
 	text-transform:uppercase;
 	/*text-align: center;*/
 }
+.countdown{
+	font-family: "BankGothic";
+	font-size: 20px;
+	color:#ffffff;
+	text-transform:uppercase;
+}
 @media (max-width: 1199px){
 	.topTitle{
 		font-size: 40px;
